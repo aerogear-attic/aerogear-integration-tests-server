@@ -55,6 +55,9 @@
         <java.version>1.6</java.version>
         <maven.compile.plugin.version>3.1</maven.compile.plugin.version>
         <jboss.maven.plugin.version>7.4.Final</jboss.maven.plugin.version>
+        <aerogear.security.version>1.3.1</aerogear.security.version>
+        <aerogear.security.picketlink.version>1.3.1</aerogear.security.picketlink.version>
+
     </properties>
 
     <dependencies>
@@ -80,6 +83,18 @@
             <artifactId>resteasy-multipart-provider</artifactId>
             <version>${resteasy.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.aerogear</groupId>
+            <artifactId>aerogear-security</artifactId>
+            <version>${aerogear.security.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.aerogear</groupId>
+            <artifactId>aerogear-security-picketlink</artifactId>
+            <version>${aerogear.security.picketlink.version}</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
