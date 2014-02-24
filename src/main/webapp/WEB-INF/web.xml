@@ -17,9 +17,49 @@
 
 -->
 <!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>Archetype Created Web Application</display-name>
+    <display-name>Archetype Created Web Application</display-name>
+    <!-- Digest authentication filter -->
+    <filter>
+        <filter-name>DigestAuthenticationFilter</filter-name>
+        <filter-class>org.picketlink.authentication.web.AuthenticationFilter</filter-class>
+        <init-param>
+            <param-name>authType</param-name>
+            <param-value>DIGEST</param-value>
+        </init-param>
+        <init-param>
+            <param-name>realmName</param-name>
+            <param-value>default</param-value>
+        </init-param>
+        <init-param>
+            <param-name>unprotectedMethods</param-name>
+            <param-value>OPTIONS</param-value>
+        </init-param>
+    </filter>
+
+    <!-- Enable Basic authentication filter -->
+    <filter>
+        <filter-name>BasicAuthenticationFilter</filter-name>
+        <filter-class>org.picketlink.authentication.web.AuthenticationFilter</filter-class>
+        <init-param>
+            <param-name>authType</param-name>
+            <param-value>BASIC</param-value>
+        </init-param>
+    </filter>
+
+    <!-- Digest authentication filter mapping -->
+    <filter-mapping>
+        <filter-name>DigestAuthenticationFilter</filter-name>
+        <url-pattern>/rest/bacons/*</url-pattern>
+    </filter-mapping>
+
+    <!-- Enable Basic authentication filter mapping -->
+    <filter-mapping>
+        <filter-name>BasicAuthenticationFilter</filter-name>
+        <url-pattern>/rest/beers/*</url-pattern>
+    </filter-mapping>
+
 </web-app>
