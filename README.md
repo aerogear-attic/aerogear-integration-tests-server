@@ -53,11 +53,15 @@ curl -v \
 
 #### Basic
 
+##### GET /rest/beers
 ```
 curl -v -X GET -u john:123 http://localhost:8080/aerogear-integration-tests-server/rest/beers
 ```
 
 #### Digest
+
+##### GET /rest/bacons
+
 ```
 curl -v --digest -u john:123 -X GET http://localhost:8080/aerogear-integration-tests-server/rest/bacons
 ```
