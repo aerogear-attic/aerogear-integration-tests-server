@@ -59,5 +59,5 @@ curl -v -X GET -u john:123 http://localhost:8080/aerogear-integration-tests-serv
 
 #### Digest
 ```
-curl -v --digest -u john:12 -X GET http://localhost:8080/aerogear-integration-tests-server/rest/bacons
+curl -v --digest -u john:123 -X GET http://localhost:8080/aerogear-integration-tests-server/rest/bacons
 ```
