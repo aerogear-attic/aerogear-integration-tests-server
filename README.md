@@ -78,7 +78,8 @@ curl -v --digest -u john:123 -X GET http://localhost:8080/aerogear-integration-t
 #### Retrieve the secret
 ##### GET /rest/auth/otp/secret
 
+```
 curl -3 -v -b cookies.txt -c cookies.txt -H "Accept: application/json" -H "Content-type: application/json" -X GET http://localhost:8080/aerogear-integration-tests-server/rest/auth/otp/secret
-
+```
 
 
