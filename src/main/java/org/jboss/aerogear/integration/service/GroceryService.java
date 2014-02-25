@@ -24,7 +24,7 @@ import javax.ws.rs.core.MediaType;
 import java.util.Arrays;
 import java.util.List;
 
-@Path("/")
+@Path("/grocery")
 public class GroceryService {
 
     @GET

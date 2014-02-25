@@ -60,14 +60,14 @@ curl -3 -v -b cookies.txt -c cookies.txt -H "Accept: application/json" -H "Conte
 
 #### Basic
 
-##### GET /rest/beers
+##### GET /rest/grocery/beers
 ```
 curl -v -X GET -u john:123 http://localhost:8080/aerogear-integration-tests-server/rest/beers
 ```
 
 #### Digest
 
-##### GET /rest/bacons
+##### GET /rest/grocery/bacons
 
 ```
 curl -v --digest -u john:123 -X GET http://localhost:8080/aerogear-integration-tests-server/rest/bacons
@@ -76,6 +76,7 @@ curl -v --digest -u john:123 -X GET http://localhost:8080/aerogear-integration-t
 ### OTP
 
 #### Retrieve the secret
+##### GET /rest/auth/otp/secret
 
 curl -3 -v -b cookies.txt -c cookies.txt -H "Accept: application/json" -H "Content-type: application/json" -X GET http://localhost:8080/aerogear-integration-tests-server/rest/auth/otp/secret
 
