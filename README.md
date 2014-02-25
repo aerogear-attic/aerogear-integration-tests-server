@@ -48,3 +48,16 @@ curl -v \
      -X POST http://localhost:8080/aerogear-integration-tests-server/rest/push/send \
      -d  'This is my message'
 ```
+
+### Authenticaton
+
+#### Basic
+
+```
+curl -v -X GET -u john:123 http://localhost:8080/aerogear-integration-tests-server/rest/beers
+```
+
+#### Digest
+```
+curl -v --digest -u john:12 -X GET http://localhost:8080/aerogear-integration-tests-server/rest/bacons
+```
