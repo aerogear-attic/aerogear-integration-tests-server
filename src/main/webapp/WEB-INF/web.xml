@@ -53,13 +53,13 @@
     <!-- Digest authentication filter mapping -->
     <filter-mapping>
         <filter-name>DigestAuthenticationFilter</filter-name>
-        <url-pattern>/rest/bacons/*</url-pattern>
+        <url-pattern>/rest/grocery/bacons/*</url-pattern>
     </filter-mapping>
 
     <!-- Enable Basic authentication filter mapping -->
     <filter-mapping>
         <filter-name>BasicAuthenticationFilter</filter-name>
-        <url-pattern>/rest/beers/*</url-pattern>
+        <url-pattern>/rest/grocery/beers/*</url-pattern>
     </filter-mapping>
 
 </web-app>

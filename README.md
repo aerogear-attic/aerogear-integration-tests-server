@@ -62,7 +62,8 @@ curl -3 -v -b cookies.txt -c cookies.txt -H "Accept: application/json" -H "Conte
 
 ##### GET /rest/grocery/beers
 ```
-curl -v -X GET -u john:123 http://localhost:8080/aerogear-integration-tests-server/rest/beers
+curl -v -X GET -u john:123 http://localhost:8080/aerogear-integration-tests-server/rest/grocery/beers
+
 ```
 
 #### Digest
@@ -70,7 +71,7 @@ curl -v -X GET -u john:123 http://localhost:8080/aerogear-integration-tests-serv
 ##### GET /rest/grocery/bacons
 
 ```
-curl -v --digest -u john:123 -X GET http://localhost:8080/aerogear-integration-tests-server/rest/bacons
+curl -v --digest -u john:123 -X GET http://localhost:8080/aerogear-integration-tests-server/rest/grocery/bacons
 ```
 
 ### OTP
