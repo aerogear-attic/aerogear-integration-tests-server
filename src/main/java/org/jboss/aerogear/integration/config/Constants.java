@@ -18,8 +18,8 @@ package org.jboss.aerogear.integration.config;
 
 public interface Constants {
 
-    public static final String AG_PUSH_URL = "";
-    public static final String PUSH_APLICATION_ID = "";
-    public static final String PUSH_MASTER_SECRET = "";
+    static final String AG_PUSH_URL = "";
+    static final String PUSH_APLICATION_ID = "";
+    static final String PUSH_MASTER_SECRET = "";
 
 }
