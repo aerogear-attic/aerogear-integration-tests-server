@@ -62,4 +62,23 @@
         <url-pattern>/rest/grocery/beers/*</url-pattern>
     </filter-mapping>
 
+
+    <security-constraint>
+        <web-resource-collection>
+            <url-pattern>/rest/portal/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>user</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <login-config>
+        <auth-method>KEYCLOAK</auth-method>
+        <realm-name>product-inventory</realm-name>
+    </login-config>
+
+    <security-role>
+        <role-name>user</role-name>
+    </security-role>
+
 </web-app>

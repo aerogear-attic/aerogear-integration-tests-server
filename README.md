@@ -83,4 +83,14 @@ curl -b --cookie -v --user agnes:123 --digest -X GET http://localhost:8080/aerog
 curl -3 -v -b cookies.txt -c cookies.txt -H "Accept: application/json" -H "Content-type: application/json" -X GET http://localhost:8080/aerogear-integration-tests-server/rest/auth/otp/secret
 ```
 
+### OAuth2 with Keycloak 
+
+#### Pre-requisites
+
+* use [Keycloak Appliance Distribution](http://docs.jboss.org/keycloak/docs/1.0-alpha-3/userguide/html/server-installation.html) comes with a preconfigured Keycloak server (based on Wildfly). Tested with keycloak-appliance-dist-all-1.0-alpha-4
+* import realm [configuration file](configuration/testrealm.json)
+
+#### GET /rest/portal/products
+This rest point is configured to work as a public client OAuth2 endpoint.
+Use [ProductInventory](https://github.com/aerogear/aerogear-ios-cookbook/tree/master/ProductInventory) iOS app to test the OAuth2 access.
 
