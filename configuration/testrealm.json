@@ -13,22 +13,11 @@
     "requiredCredentials": [ "password" ],
     "users" : [
         {
-            "username" : "bburke@redhat.com",
+            "username" : "testuser@redhat.com",
             "enabled": true,
-            "email" : "bburke@redhat.com",
-            "firstName": "Bill",
-            "lastName": "Burke",
-            "credentials" : [
-                { "type" : "password",
-                  "value" : "password" }
-            ]
-        },
-        {
-            "username" : "corinnekrych@gmail.com",
-            "enabled": true,
-            "email" : "corinnekrych@gmail.com",
-            "firstName": "Corinne",
-            "lastName": "Krych",
+            "email" : "testuser@redhat.com",
+            "firstName": "testuser",
+            "lastName": "testuser",
             "credentials" : [
                 { "type" : "password",
                   "value" : "password" }
@@ -49,11 +38,7 @@
     },
     "roleMappings": [
         {
-            "username": "bburke@redhat.com",
-            "roles": ["admin"]
-        },
-        {
-            "username": "corinnekrych@gmail.com",
+            "username": "testuser@redhat.com",
             "roles": ["user"]
         }
     ],
