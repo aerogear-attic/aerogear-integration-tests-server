@@ -58,7 +58,7 @@ public class TeamService {
         Developer matzew = new Developer("Matthias Wessendorf", "mwessendorf", "https://pbs.twimg.com/profile_images/446674276129579008/nbPgKi8m.jpeg");
         team.add(matzew);
 
-        Developer passos = new Developer("Daniel Passos", "passos", "https://pbs.twimg.com/profile_images/433541394192678912/70ZV9Ltf.jpeg");
+        Developer passos = new Developer("Daniel Passos", "passos", "https://pbs.twimg.com/profile_images/452656410778927105/2qdd9NhO_400x400.jpeg");
         team.add(passos);
 
         Developer qmx = new Developer("Douglas Campos", "qmx", "https://pbs.twimg.com/profile_images/378800000802700429/05ee67897e2cd187c0d5fe782b389a23.jpeg");
