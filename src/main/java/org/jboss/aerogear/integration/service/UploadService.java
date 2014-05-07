@@ -34,8 +34,9 @@ import java.util.Map;
  * A service that handles a 'multipart/form-data' request.
  * Currently it simply echoes backs to the client the values posted. For 'file' parts, it echoes the
  * overall size of the file.
- * <p/>
- * Note: file objects are not persisted on-disk for obvious reasons.
+ * <p>
+ *     Note: file objects are not persisted on-disk for obvious reasons.
+ * </p>
  */
 @Path("/upload")
 public class UploadService {
