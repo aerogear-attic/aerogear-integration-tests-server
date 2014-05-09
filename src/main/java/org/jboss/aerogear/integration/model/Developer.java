@@ -22,10 +22,7 @@ public class Developer {
     private String twitter;
     private String photoURL;
 
-    public Developer(String name, String twitter, String photoURL) {
-        this.name = name;
-        this.twitter = twitter;
-        this.photoURL = photoURL;
+    public Developer() {
     }
 
     public String getName() {
