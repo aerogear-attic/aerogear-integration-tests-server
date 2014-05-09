@@ -72,6 +72,12 @@ public class TeamService {
         edewit.setPhotoURL("http://www.gravatar.com/avatar/420a03dc70653e8b571382be483f2ce7?s=" + photoSize);
         team.add(edewit);
 
+        Developer lfryc = new Developer();
+        lfryc.setName("Lukáš Fryč");
+        lfryc.setTwitter("lfryc");
+        lfryc.setPhotoURL("http://www.gravatar.com/avatar/739e72e6563e5a221b69c19c31ce6228?s=" + photoSize);
+        team.add(lfryc);
+
         Developer lholmquist = new Developer();
         lholmquist.setName("Lucas Holmquist");
         lholmquist.setTwitter("sienaluke");
